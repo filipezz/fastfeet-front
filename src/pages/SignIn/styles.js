@@ -25,7 +25,6 @@ export const Content = styled.div`
   form {
     display: flex;
     flex-direction: column;
-
     width: 300px;
   }
   label {
@@ -36,10 +35,15 @@ export const Content = styled.div`
   }
   input {
     border-radius: 4px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     height: 45px;
     padding: 12px 15px;
     margin: 0 0 10px;
+    transition: border 0.3s ease-in-out;
+
+    &:focus {
+      border: 2px solid #7d40e7;
+    }
     &::placeholder {
       color: #999;
     }
@@ -51,7 +55,13 @@ export const Content = styled.div`
     color: #fff;
     font-weight: bold;
     height: 45px;
-
     font-size: 16px;
+    transition: 0.2s;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid #7d40e7;
+      color: #7d40e7;
+    }
   }
 `;
