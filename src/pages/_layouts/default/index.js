@@ -2,22 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Header from '../../../components/Header';
-import DashboardHeader from '../../../components/DashboardHeader';
 
-import history from '../../../services/history';
-import { Content } from './styles';
+import { Content, Wrapper } from './styles';
 
 export default function DefaultLayout({ children }) {
-  const location = history.location.pathname.substr(1);
-
   return (
-    <>
+    <Wrapper>
       <Header />
-      <Content>
-        <DashboardHeader page={location} />
-        {children}
-      </Content>
-    </>
+      <Content>{children}</Content>
+    </Wrapper>
   );
 }
 DefaultLayout.propTypes = {

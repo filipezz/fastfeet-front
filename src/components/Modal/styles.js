@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.section`
   background: #fff;
   padding: 25px;
-
   line-height: 26px;
 
   div {
@@ -28,8 +27,6 @@ export const Container = styled.section`
   }
   article {
     background: red;
-
-    width: 1px;
     max-width: 100%;
     align-self: center;
   }

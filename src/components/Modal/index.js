@@ -40,10 +40,10 @@ export default function Modal({ delivery, problem }) {
           </div>
         </>
       ) : (
-        <>
+        <div>
           <strong> Descrição do problema:</strong>
           <p>{problem}</p>
-        </>
+        </div>
       )}
     </Container>
   );

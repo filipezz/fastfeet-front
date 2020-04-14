@@ -22,7 +22,7 @@ export default function Header() {
             <div>
               <StyledLink to="/encomendas">Encomendas</StyledLink>
               <StyledLink to="/entregadores">Entregadores</StyledLink>
-              <StyledLink to="/destinatarios">Destinatários</StyledLink>
+              <StyledLink to="/destinatários">Destinatários</StyledLink>
               <StyledLink to="/problemas">Problemas</StyledLink>
             </div>
 
